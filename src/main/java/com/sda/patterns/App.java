@@ -8,7 +8,11 @@ public class App {
         @Override
         public void run() {
             Singleton singleton = Singleton.getInstance();
+            SingletonEnum singletonEnum = SingletonEnum.INSTANCE;
+
+            singletonEnum.connection();
             System.out.println(singleton);
+
         }
     }
 
@@ -17,6 +21,9 @@ public class App {
         @Override
         public void run() {
             Singleton singleton = Singleton.getInstance();
+            SingletonEnum singletonEnum = SingletonEnum.INSTANCE;
+
+            singletonEnum.connection();
             System.out.println(singleton);
         }
     }
